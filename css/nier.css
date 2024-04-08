@@ -5,26 +5,21 @@ html {
 }
 
 body{
-    font-family: Open Sans, serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.6;
     background-color: #313131;
     color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0 auto;
+    /* margin: 0 auto;  */
 }
 
 .wrapper {
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
-    max-width: 100%;
-    /* max-width: 1440px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     margin: 0 auto;
-    flex: 1 0 auto;
 }
 
 a {
@@ -52,15 +47,20 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: normal;
     line-height: 1.3;
     color: white;
 }
 
 h5 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white;
+}
+
+h6{
+    font-size: 1.6rem;
+    color:#fff;
 }
 
 p{
@@ -75,16 +75,18 @@ p{
     right: 25px;
     text-align: right;
     font-size: 16px;
-
+    z-index: 5;
 }
 
 .nav li{
     margin: 10px;
+
 }
 
 .nav li a{
     display: inline-block;
     color: white;
+    /* text-shadow: #000; */
     position: relative;
 }
 
@@ -101,3 +103,327 @@ p{
 
 
 /* ---------------------------- Header ---------------------------- */
+header{
+    /* max-width: 1440px; */
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/NieR/nier-automata-art-forest-1920x1200-1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+header a{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+header div{
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 82%;
+    left: 19%;
+}
+
+header h2,
+header h3{
+    font-family: Judson, serif;
+    letter-spacing: 10px;
+    
+}
+
+header div h3{
+    margin-left: 160px;
+}
+
+/* ---------------- Story Start ---------------- */
+.sotry{
+    /* display:flex ; */
+    /* width: 1440px; */
+    height: 1024px;
+}
+
+.storyCont{
+    background-image: url(../img/NieR/landing/Frame\ 39.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 769px;
+    display: inline-block;
+}
+
+.storyCont>div{
+    padding-top: 100px;
+    margin-left: 120px;
+    width: 777px;
+    height: 581px;
+}
+
+.storyCont h4{
+    margin-bottom: 118px;
+}
+/* ---------------- Story End ---------------- */
+
+/* ---------------- Features1 Start ---------------- */
+.features1{
+    background-image: url(../img/NieR/landing/odd2.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    /* margin-top: 250px; */
+    /* margin-bottom: 100px; */
+    width: 100%;
+    height: 1024px;
+    display: inline-block;
+}
+
+.featCont{
+    width: 897px;
+    height: 959px;
+    margin-top: 55px;
+    /* outline: 1px red solid; */
+    margin-left: 40%;
+}
+
+.featCont h4{
+    width: 870px;
+}
+
+.featCont img{
+    width: 607px;
+    margin: 104px 0 104px 100px;
+}
+
+.dlc1{
+    /* outline: 1px red solid; */
+    display: flex;
+}
+
+.dlc1 ul{
+    width: 302px;
+    margin-left: 10%;
+}
+
+.dlc1 ul li{
+    position: relative;
+}
+
+.dlc1 ul li::before{
+    position: absolute;
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 12px;
+    left: -20px;
+}
+/* ---------------- Features1 End ---------------- */
+
+/* ---------------- Features2 Start ---------------- */
+.feature2{
+    /* height: 2100px; */
+    position: relative;
+    /* z-index: -1; */
+}
+
+.divider{
+    background-image: linear-gradient(#313131 0%, #000 100%);
+}
+
+.dividImg{
+    width: 100%;
+    height: 849px;
+    background-image: url(../img/NieR/landing/Rectangle\ 23.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 196px;
+    position: relative;
+    z-index: 1;
+}
+
+.featCont1{
+    background-color: #000;
+    height: 1200px;
+    width: 100%;
+    padding-left: 17%;
+}
+
+.featCont1>div{
+    padding-top: 100px;
+    width: 1000px;
+    height: 844px;
+}
+
+.dlc_xbox{
+    width: 455px;
+    height: 300px;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.dlc1 ul h4{
+    margin-bottom: 20px;
+}
+
+.dlc2{
+    margin-top: 54px;
+    /* outline: 1px solid red; */
+}
+
+.dlc2 ul{
+    margin-bottom: 50px;
+    width: 455px;
+    margin-left: 40px;
+
+}
+
+.dlc2 ul:nth-child(2){
+    margin-left: 200px;
+}
+
+.dlc2 ul h5{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dlc2>h5{
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+/* ---------------- Features2 End ---------------- */
+
+/* ---------------- Awards Start ---------------- */
+
+.awards{
+    width: 100%;
+    height: 698px;
+    background-image: url(../img/NieR/bg_awards.jpg);
+    background-size: cover;
+}
+
+.awards ul{
+    width: 410px;
+    height: 610px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.awards ul li{
+    padding-top: 30px;
+}
+
+.awards h3{
+    font-family: Judson, serif;
+
+}
+/* ---------------- Awards End ---------------- */
+
+/* ---------------- Music Start ---------------- */
+.musicBox{
+    height: 197px;
+    background-color: #000;
+}
+.music{
+    background-color: #000;
+    height: 698px;
+    width: 100%;
+    background-image: url(../img/NieR/landing/Rectangle\ 22.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+/* ---------------- Music End ---------------- */
+
+/* ---------------- Game Start ---------------- */
+.gamever{
+    height: 790px;
+}
+
+
+.gamever ul{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 7.5%;
+    margin-top: 5%;
+    width: 1250px;
+    height: 710px;
+}
+
+.gamever li{
+    /* width: 350px;
+    height: 510px; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    filter: grayscale(1);
+
+}
+
+.item1 {
+    background-image: url(../img/NieR/see-nier-automata-goty-ps4-min.jpg);
+    background-repeat: no-repeat;
+
+    flex-grow: 1;
+}
+
+.item2 {
+    background-image: url(../img/NieR/see-nier-automata-goty-steam-min.jpg);
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+.item3 {
+    background-image: url(../img/NieR/see-nier-automata-goty-xbox-min.jpg);
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+.item4 {
+    background-image: url(../img/NieR/nier-automata-the-end-of-yorha-edition-nintendo-switch-5021290094475-31550663229619_1100x\ 1.jpg);
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+li:hover {
+    flex-grow: 2;
+    filter: grayscale(0);
+}
+
+/* ---------------- Footer Start ---------------- */
+footer {
+    width: 100%;
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+footer p:nth-child(2) {
+    font-weight: bold;
+}
