@@ -535,8 +535,12 @@ li a i {
     color: #333;
 }
 
+#hp_game{
+    margin-top: 192px;
+}
+
 .gameBoxs {
-    margin: 212px auto;
+    margin: 20px auto 212px auto;
     max-width: 1280px;
     height: 750px;
     display: flex;
