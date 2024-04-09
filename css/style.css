@@ -107,6 +107,19 @@ nav>a img {
     line-height: 52px;
 }
 
+/* -----------------------Sub nav-------------------------- */
+ol{
+    display: none; 
+    z-index: 1;
+  }
+  
+  ol>li a{
+    background-color: #313131;
+    line-height: 2.5;
+  }
+/* -----------------------Sub nav-------------------------- */
+
+
 li a i {
     width: 48px;
     height: 48px;
@@ -855,10 +868,19 @@ footer p:nth-child(2) {
 /* ---------------- Footer End ---------------- */
 
 /* ---------------- Hover Section ---------------- */
+.navbar :nth-child(1):hover ol{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
 .colorG:hover {
     background: linear-gradient(to right, #FF0000, #FFA800);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
+
+    background-color: #313131;
+    color: transparent;
 }
 
 div .itemLink:hover,
