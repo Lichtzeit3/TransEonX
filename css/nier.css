@@ -406,32 +406,27 @@ header div h3{
     background-repeat: no-repeat;
     transition: 1s;
     filter: grayscale(1);
-
+    flex-grow: 1;
 }
 
 .item1 {
     background-image: url(../img/NieR/see-nier-automata-goty-ps4-min.jpg);
     background-repeat: no-repeat;
-
-    flex-grow: 1;
 }
 
 .item2 {
     background-image: url(../img/NieR/see-nier-automata-goty-steam-min.jpg);
     background-repeat: no-repeat;
-    flex-grow: 1;
 }
 
 .item3 {
     background-image: url(../img/NieR/see-nier-automata-goty-xbox-min.jpg);
     background-repeat: no-repeat;
-    flex-grow: 1;
 }
 
 .item4 {
     background-image: url(../img/NieR/nier-automata-the-end-of-yorha-edition-nintendo-switch-5021290094475-31550663229619_1100x\ 1.jpg);
     background-repeat: no-repeat;
-    flex-grow: 1;
 }
 
 li:hover {

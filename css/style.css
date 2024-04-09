@@ -877,10 +877,7 @@ footer p:nth-child(2) {
 .colorG:hover {
     background: linear-gradient(to right, #FF0000, #FFA800);
     background-clip: text;
-    /* -webkit-text-fill-color: transparent; */
-
-    background-color: #313131;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 div .itemLink:hover,

@@ -1,0 +1,190 @@
+@import url(reset.css);
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* margin: 0 auto;  */
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Outfit", serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: white;
+}
+
+h3 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-left: 12px;
+    color: white;
+}
+
+h4 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.3;
+    color: white;
+}
+
+h5 {
+    font-size: 2rem;
+    color: white;
+}
+
+h6{
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+nav{
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+header{
+    position: relative;
+}
+
+video{
+    width: 100%;
+    background-size: cover;
+    display: block;
+}
+
+header img{
+    position: absolute;
+    z-index: 1;
+    top: 76%;
+    left: 38%;
+    width: 25%;
+}
+
+.blue_bg{
+    background-image: linear-gradient(#193969, #193D6D, #3686A6);
+    width: 100%;
+    height: 96px;
+    overflow: hidden;
+}
+
+.marquee {
+    width: 4218px;
+    height: 84px;
+    animation-name: marquee;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(-1000px, 0)
+    }
+}
+
+.abt_sty_awd{
+    height: 750px;
+}
+
+
+.abt_sty_awd ul{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 1326px;
+    height: 675px;
+}
+
+.abt_sty_awd li {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    filter: grayscale(1);
+    flex-grow: 1;
+}
+
+.item1 {
+    background-image: url(../img/FFVII/ffvii-rebirth-main-lede-5-things.webp);
+    /* flex-grow:18; */
+}
+
+.item2 {
+    background-image: url(../img/FFVII/story-background-1-1--eyzD0CVNW.webp);
+}
+
+.item3 {
+    background-image: url(../img/FFVII/award.jpg);
+}
+
+.item1:hover {
+    flex-grow: 18;
+    filter: grayscale(0);
+}
+
+.item2:hover {
+    flex-grow: 18;
+    filter: grayscale(0);
+}
+
+.item3:hover {
+    flex-grow: 18;
+    filter: grayscale(0);
+}
+
+.item1:hover ~ .item2,
+.item1:hover ~ .item3 {
+    flex-grow: 1;
+}
+
+.item2:hover ~ .item1,
+.item2:hover ~ .item3 {
+    flex-grow: 1;
+}
+
+.item3:hover ~ .item1,
+.item3:hover ~ .item2 {
+    flex-grow: 1;
+}
+
