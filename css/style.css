@@ -919,6 +919,7 @@ div .itemLink1:hover {
     flex-direction: column;
     margin: 0 auto;
     flex: 1 0 auto;
+    
 }
 
 /* ---------------- Header Start ---------------- */
@@ -1700,6 +1701,7 @@ textarea::placeholder{
 
 .desDetail button:nth-child(1){
     border-top: 4px solid #666;
+    background-color: #fafafa;
 }
 
 .desDetail button:nth-child(2){
