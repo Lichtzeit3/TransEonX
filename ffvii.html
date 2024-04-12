@@ -12,6 +12,35 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/ffvii.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.abt_sty_awd li').hover(function () {
+                $(this).css({
+                    'flex-grow' : '18',
+                    'filter': 'grayscale(0)'
+                });
+                $(this).siblings().css({
+                    'flex-grow' : '1',
+                    'filter': 'grayscale(100%)'
+                });
+            });
+            }, 
+        );
+
+        $(document).ready(function () {
+            $('.abt_sty_awd li').hover(function () {
+                    $('.item').css({
+                        'display': 'block'
+                    });
+                    $('.item').siblings().css({
+                        'display': 'none'
+                    });
+                });
+        }, 
+    );
+    </script>
 
 </head>
 
@@ -36,9 +65,30 @@
     
     <section class="abt_sty_awd">
         <ul>
-            <li class="item1"></li>
-            <li class="item2"></li>
-            <li class="item3"></li>
+            <li class="item1">
+                <!-- <div class="item">
+                    <div>
+                        <h3>About</h3>
+                        <h6>FINAL FANTASY VII REBIRTH is the highly anticipated new story in the FINAL FANTASY VII remake project, a reimagining of the iconic original game into three standalone titles by its original creators. In this game, players will enjoy various new elements as the story unfolds, culminating in the party's journey to “The Forgotten Capital” from the original FINAL FANTASY VII.</h6>
+                    </div>
+                    <h2>About</h2>
+                </div> -->
+            </li>
+            <li class="item2">
+                <!-- <div class="item">
+                    <div>
+                        <h3>Story</h3>
+                        <h6>The Unknown Journey Continues... <br><br> Cloud and his comrades escape the city of Midgar in pursuit of the fallen hero, Sephiroth. As they travel across the world, they find themselves on a journey that will decide the fate of the planet.</h6>
+                    </div>
+                    <h2>Story</h2>
+                </div> -->
+            </li>
+            <li class="item3">
+                <!-- <div  class="item">
+                    <h2>Award</h2>
+                </div> -->
+                
+            </li>
         </ul>
     </section>
 

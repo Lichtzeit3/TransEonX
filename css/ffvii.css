@@ -141,50 +141,53 @@ header img{
     background-position: center center;
     background-repeat: no-repeat;
     transition: 1s;
-    filter: grayscale(1);
-    flex-grow: 1;
 }
 
 .item1 {
     background-image: url(../img/FFVII/ffvii-rebirth-main-lede-5-things.webp);
-    /* flex-grow:18; */
+    flex-grow:18;
+    box-sizing: border-box;
 }
 
 .item2 {
     background-image: url(../img/FFVII/story-background-1-1--eyzD0CVNW.webp);
+    flex-grow: 1;
 }
 
 .item3 {
     background-image: url(../img/FFVII/award.jpg);
-}
-
-.item1:hover {
-    flex-grow: 18;
-    filter: grayscale(0);
-}
-
-.item2:hover {
-    flex-grow: 18;
-    filter: grayscale(0);
-}
-
-.item3:hover {
-    flex-grow: 18;
-    filter: grayscale(0);
-}
-
-.item1:hover ~ .item2,
-.item1:hover ~ .item3 {
     flex-grow: 1;
 }
 
-.item2:hover ~ .item1,
-.item2:hover ~ .item3 {
-    flex-grow: 1;
+.item {
+    /* width: 1193px; */
+    margin-top: 470px;
+    /* display: flex; */
+    text-align: right;
+    box-sizing: border-box;
 }
 
-.item3:hover ~ .item1,
-.item3:hover ~ .item2 {
-    flex-grow: 1;
+.item div{
+    /* display: none; */
+    /* display: inline-block; */
+    width: 660px;
+    height: 200px;
+    margin-left: 80px;
+    background-color: rgba(52, 52, 52, .6);
+    box-sizing: border-box;
+    text-align: left;
+    
 }
 
+.item h3{
+    padding: 10px;
+    line-height: 1;
+}
+.item h6{
+    padding: 10px;
+}
+
+.item h2{
+    transform: rotate(-90deg) translateX(120px) translateY(20px);
+    display: inline-block;
+}
