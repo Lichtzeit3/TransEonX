@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
+    <title>Shopping Cart</title>
     <link rel="icon" href="./img/icons/Logo_Color.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,25 +37,22 @@
 
             <ul class="navbar">
                 <li class="function"><a href="#" class="colorG"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="function"><a href="#" class="colorG"><i class="fa-solid fa-cart-shopping"></i></a>
+                <li class="function"><a href="cart.html" class="colorG"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
-                <li class="function">
-                    <a href="profile.html" class="profileIcon"><img src="./img/NieR/profile/Emil0.5.jpg"
-                            alt="profileIcon"></a>
-                    </a>
-                </li>
+                <li class="function"><a href="login.html" class="colorG profileIcon"><i
+                    class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
 
         <!-- ---------------------- Header ----------------------- -->
         <header class="header1">
-            <h1>WISHLIST</h1>
+            <h1>YOUR CART</h1>
         </header>
 
         <!-- ---------------------- Main ----------------------- -->
-        <main class="main">
+        <main class="main main_cart">
 
-            <ul>
+            <ul class="cartUl">
 
                 <li class="itemTotal">
                     <h5>ITEM (3 ITEMS)</h5>
@@ -63,39 +60,15 @@
                 </li>
 
                 <li class="itemRows">
-                    <img src="./img/NieR/wishlist/item1x2.jpg" alt="nier_item1" class="wishPic1">
+                    <img src="./img/NieR/NieRAutomata_PAK_2B_DX_bg07__37995.jpg" alt="nier_item1" class="wishPic">
 
-                    <div class="wish_info">
-                        <div class="namePrice">
-                            <h4>NieR:Automata FORM-ISM Figure - 2B (YoRHa No. 2 Type B)</h4>
-                            <h3 style="color: black;">Sold Out</h3>
-                        </div>
-
-                        <div class="num_btns">
-                            <div>
-                                <div class="qty">
-                                    <button class="minus_add"><i class="fa-regular fa-square-minus fa-3x"></i></button>                            
-                                    <span>0</span>
-                                    <button class="minus_add"><i class="fa-regular fa-square-plus fa-3x"></i></button>
-                                </div>
-
-                                <button class="remove">Remove Item</button>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="itemRows">
-                    <img src="./img/FFVII/wishlist/item2x2.jpg" alt="ff_item2" class="wishPic">
-
-                    <div class="wish_info">
-                        <div class="namePrice">
-                            <h4>Final Fantasy VII Rebirth Adorable Arts - Tifa Lockhart</h4>
+                    <div class="cart_info">
+                        <div class="namePrice1">
+                            <h4>NieR:Automata Play Arts Kai Action Figure 2B (YoRHa No. 2 Type B) Delux Ver.</h4>
                             <h3 style="color: black;">$ N/A</h3>
                         </div>
 
-                        <div class="num_btns">
+                        <div class="num_btns1">
                             <div>
                                 <div class="qty">
                                     <button class="minus_add"><i class="fa-regular fa-square-minus fa-3x"></i></button>                            
@@ -103,7 +76,31 @@
                                     <button class="minus_add"><i class="fa-regular fa-square-plus fa-3x"></i></button>
                                 </div>
 
-                                <button class="addCart">Add to Cart</button>
+                                <button class="x_btn"><i class="fa-solid fa-square-xmark"></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="itemRows">
+                    <img src="./img/NieR/95ccb3d6f621b09b67564668fb611cda_1920_KR__97530.jpg" alt="nier_item2" class="wishPic">
+
+                    <div class="cart_info">
+                        <div class="namePrice1">
+                            <h4>NieR:Automata Music Box - A Beautiful Song</h4>
+                            <h3 style="color: black;">$ N/A</h3>
+                        </div>
+
+                        <div class="num_btns1">
+                            <div>
+                                <div class="qty">
+                                    <button class="minus_add"><i class="fa-regular fa-square-minus fa-3x"></i></button>                            
+                                    <span>1</span>
+                                    <button class="minus_add"><i class="fa-regular fa-square-plus fa-3x"></i></button>
+                                </div>
+
+                                <button class="x_btn"><i class="fa-solid fa-square-xmark"></i></button>
                                 
                             </div>
                         </div>
@@ -111,29 +108,51 @@
                 </li>
 
                 <li class="itemRows">
-                    <img src="./img/NieR/wishlist/item3x2.jpg" alt="nier_item3" class="wishPic1">
+                    <img src="./img/FFVII/FF7R_PLAY_ARTS_KAI_TIFA_bg01__96559.jpg" alt="ff_item3" class="wishPic">
 
-                    <div class="wish_info">
-                        <div class="namePrice">
-                            <h4>Nendoroid NieR:Automata 2B (YoRHa No. 2 Type B)</h4>
-                            <h3 style="color: black;">Sold Out</h3>
+                    <div class="cart_info">
+                        <div class="namePrice1">
+                            <h4>Final Fantasy VII Remake Play Arts Kai Action Figure - Tifa Lockhart</h4>
+                            <h3 style="color: black;">$ N/A</h3>
                         </div>
 
-                        <div class="num_btns">
+                        <div class="num_btns1">
                             <div>
                                 <div class="qty">
                                     <button class="minus_add"><i class="fa-regular fa-square-minus fa-3x"></i></button>                            
-                                    <span>0</span>
+                                    <span>1</span>
                                     <button class="minus_add"><i class="fa-regular fa-square-plus fa-3x"></i></button>
                                 </div>
 
-                                <button class="remove">Remove Item</button>
+                                <button class="x_btn"><i class="fa-solid fa-square-xmark"></i></button>
                                 
                             </div>
                         </div>
                     </div>
                 </li>
 
+            </ul>
+
+            <ul class="cartTotal">
+                <li>
+                    <h5>Subtotal:</h5>
+                    <h5>$ N/A</h5>
+                </li>
+                <li>
+                    <h5>Shopping:</h5>
+                    <h5><a href="#">Add Info</a></h5>
+                </li>
+                <li>
+                    <h5>Coupon Code:</h5>
+                    <h5><a href="#">Add Coupon</a></h5>
+                </li>
+                <li>
+                    <h3>Grand Total:</h3>
+                    <h3>$ N/A</h3>
+                </li>
+                <li>
+                    <button class="logIn_btn mAddCart">PROCEED TO CHECKOUT</button>
+                </li>
             </ul>
 
         </main>
