@@ -24,20 +24,23 @@
             <!-- --------------------------------------Nav Bar------------------------------------------ -->
             <ul class="navbar">
                 <li>
-                    <a href="#" class="colorG">Games</a>
+                    <a href="" class="colorG">Games</a>
                     <ol>
-                        <li><a href="nier.html" class="colorG">NieR:Automata</a></li>
-                        <li><a href="ffvii.html" class="colorG">Final Fantasy VII</a></li>
+                        <li><a href="nier.html" target="_blank" class="colorG">NieR:Automata</a></li>
+                        <li><a href="ffvii.html" target="_blank" class="colorG">Final Fantasy VII</a></li>
                     </ol>
                 </li>
-                <li><a href="#" class="colorG">About</a></li>
+                <li><a href="#hp_about" class="colorG">About</a></li>
                 <li><a href="store.html" class="colorG">Store</a></li>
                 <li><a href="support.html" class="colorG">Support</a></li>
             </ul>
 
             <ul class="navbar">
-                <li class="function"><a href="#" class="colorG"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="function"><a href="cart.html" class="colorG"><i class="fa-solid fa-cart-shopping"></i></a>
+                <li class="function">
+                    <a href="#" class="colorG"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="function"><a href="cart.html" class="colorG"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
                 </li>
                 <li class="function"><a href="login.html" class="colorG profileIcon"><i
                             class="fa-solid fa-user"></i></a></li>
@@ -57,9 +60,9 @@
                 <div class="supportStage">
                     <p class="tags">Fill out form</p>
                     <span></span>
-                    <p class="tags">Confirm</p>
+                    <p class="tags tags1">Confirm</p>
                     <span></span>
-                    <p class="tags">Complete</p>
+                    <p class="tags tags1">Complete</p>
                 </div>
                 <div>
                     <p class="inquiryInstruct">To submit an inquiry, please fill in the necessary information below. Please note that it may take some time for us to reply. Thank you for your understanding. (<span class="red">*</span> is a required item.)</p>
@@ -106,32 +109,32 @@
                         
                         <li>
                             <label for="name">Name</label>
-                            <input type="text" placeholder="-- Full Name --" class="supportInput">
+                            <input type="text" placeholder="-- Full Name --" class="supportInput" id="name">
                         </li>
 
                         <li>
                             <label for="email">Email <span class="red">*</span></label>
-                            <input type="email" placeholder="example@transeonx.com" class="supportInput">
+                            <input type="email" placeholder="example@transeonx.com" class="supportInput" id="email">
                         </li>
 
                         <li>
                             <label for="games">Games</label>
-                            <input type="text" placeholder="-- Game's Name --" class="supportInput">
+                            <input type="text" placeholder="-- Game's Name --" class="supportInput" id="games">
                         </li>
 
                         <li>
                             <label for="username">Username <span class="red">*</span></label>
-                            <input type="text" placeholder="-- Username --" class="supportInput">
+                            <input type="text" placeholder="-- Username --" class="supportInput" id="username">
                         </li>
 
                         <li>
                             <label for="attach" class="attach">Attach Files <p>You can attach up to 1 file, no more than 6MB.</p></label>
-                            <input type="file" class="fileInput" placeholder="choose file" value="Choose file">
+                            <input type="file" class="fileInput" placeholder="choose file" value="Choose file" id="attach">
                         </li>
 
                         <li>
                             <label for="description">Description <span class="red">*</span></label>
-                            <textarea class="supportInput" placeholder="Please enter your message"></textarea>
+                            <textarea class="supportInput" placeholder="Please enter your message" id="description"></textarea>
                         </li>
 
                         <li>

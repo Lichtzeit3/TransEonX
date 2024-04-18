@@ -5,7 +5,7 @@ html {
 }
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Encode Sans Condensed", sans-serif;
     line-height: 1.6;
     background-color: #000;
     color: white;
@@ -39,6 +39,7 @@ h2 {
     font-weight: bold;
     line-height: 1.3;
     color: white;
+    text-shadow: 2px 2px 2px #000;
 }
 
 h3 {
@@ -70,7 +71,8 @@ p{
     color: white;
 }
 
-nav{
+/* ======================= Start ======================= */
+.nav{
     position: absolute;
     z-index: 1;
     margin-top: 20px;
@@ -102,25 +104,36 @@ header img{
     overflow: hidden;
 }
 
-.marquee {
-    width: 4218px;
-    height: 84px;
-    animation-name: marquee;
-    animation-duration: 25s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+.marquee{
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    position: relative;
+    user-select: none;
 }
 
-@keyframes marquee {
-    0% {
-        transform: translate(0, 0)
-    }
+.marquee-content{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1rem;
+}
 
-    100% {
-        transform: translate(-1000px, 0)
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 1rem));
     }
 }
+
+.scroll{
+    animation: scroll 30s linear infinite;
+}
+
+/* ============================== abt_sty_awd ================================ */
 
 .abt_sty_awd{
     height: 750px;
@@ -134,6 +147,11 @@ header img{
     margin-top: 3%;
     width: 1326px;
     height: 675px;
+}
+
+.abt_sty_awd ul{
+    position: relative;
+    z-index: 2;
 }
 
 .abt_sty_awd li {
@@ -162,21 +180,17 @@ header img{
 .item {
     /* width: 1193px; */
     margin-top: 470px;
-    /* display: flex; */
-    text-align: right;
+    display: flex;
     box-sizing: border-box;
 }
 
 .item div{
-    /* display: none; */
-    /* display: inline-block; */
     width: 660px;
     height: 200px;
     margin-left: 80px;
     background-color: rgba(52, 52, 52, .6);
     box-sizing: border-box;
     text-align: left;
-    
 }
 
 .item h3{
@@ -190,4 +204,166 @@ header img{
 .item h2{
     transform: rotate(-90deg) translateX(120px) translateY(20px);
     display: inline-block;
+}
+
+
+/* =============================== Character =================================== */
+
+.character{
+    background-image: linear-gradient(#000, #102035);
+    padding-top: 100px;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.character_title{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100vw;
+}
+
+.pro_left{
+    display: block;
+    object-fit: cover;
+    width: 400px;
+    transform: rotate(135deg);
+    opacity: .3;
+}
+
+.pro_right{
+    display: block;
+    object-fit: cover;
+    width: 400px;
+    opacity: .3;
+    transform: rotate(-135deg);
+}
+
+.carousel{
+    position: relative;
+    top: -150px;
+}
+
+/* ================================= ROTW ================================== */
+.rotw{
+    background-color: #102035;
+}
+
+.rotw h2{
+    text-align: center;
+    margin: 0 0 60px;
+}
+swiper-container {
+    width: 90%;
+    height: 50.625%;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+swiper-slide div {
+    display: block;
+    width: 32%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 9%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+*{
+    --swiper-navigation-color: white;
+    --swiper-pagination-color: #389cc4;
+    --swiper-pagination-bullet-inactive-color: white;
+}
+
+/* ================================= Abilities =================================== */
+.abilities{
+    background-color: #102035;
+}
+
+.abilities h2{
+    text-align: center;
+    margin: 88px 0;
+}
+
+.abilitiesInfo{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(2, 450px);
+    gap: 44px 8px;
+}
+
+.ability img{
+    width: 420px;
+}
+
+.ability h5{
+    font-size: 2.4rem;
+    border-bottom: 1px solid #8d8d8d;
+    margin: 0 20px 8px 20px;
+    padding-left: 40px;
+}
+
+.ability h6{
+    margin: 0 20px;
+}
+/* ============================= System ============================== */
+.system{
+    background-color: #102035;
+}
+
+.system h2{
+    margin: 100px 0 40px;
+    text-align: center;
+}
+
+.system video{
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: 105px;
+}
+/* ============================== BUY BTN ============================= */
+.buy_btn{
+    display: block;
+    text-align: center;
+    width: 27%;
+    margin: 0 auto;
+    background-color: #52899A;
+    font-family: "Outfit", serif;
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 104px;
+}
+/* =============================== Footer ============================= */
+footer{
+    margin: 0 auto;
+}
+
+footer img{
+    margin: 40px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer p:last-child{
+    font-family: "Outfit", serif;
+    margin-bottom: 40px;
 }

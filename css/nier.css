@@ -322,9 +322,8 @@ header div h3{
 
 .awards ul{
     width: 410px;
-    height: 610px;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 10%;
 }
 
 .awards ul li{
@@ -352,55 +351,55 @@ header div h3{
     display: block;
 }
 
-.marquee {
-    width: 4400px;
-    /* height: 202px; */
-    animation-name: marquee;
-    animation-duration: 60s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+.marquee{
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    position: relative;
+    user-select: none;
 }
 
-@keyframes marquee {
-    0% {
-        transform: translate(0, 0)
-    }
+.marquee-content{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1rem;
 
-    100% {
-        transform: translate(-2200px, 0)
-    }
-}
-
-.marquee h1 {
-    width: 4400px;
-    /* height: 202px; */
     font-size: 16rem;
     font-weight: bold;
     margin-bottom: 138px;
     padding-top: 400px;
     opacity: 50%;
 }
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 1rem));
+    }
+}
+
+.scroll{
+    animation: scroll 60s linear infinite;
+}
 /* ---------------- Music End ---------------- */
 
 /* ---------------- Game Start ---------------- */
 .gamever{
     height: 790px;
-}
-
-
-.gamever ul{
     display: flex;
     margin: 0 auto;
-    margin-left: 7.5%;
-    margin-top: 5%;
+    margin: 5% 0 5% 7.5%;
     width: 1250px;
     height: 710px;
 }
 
-.gamever li{
-    /* width: 350px;
-    height: 510px; */
+.gamever a{
+    display: block;
+    height: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -425,11 +424,11 @@ header div h3{
 }
 
 .item4 {
-    background-image: url(../img/NieR/nier-automata-the-end-of-yorha-edition-nintendo-switch-5021290094475-31550663229619_1100x\ 1.jpg);
+    background-image: url(../img/NieR/NieREndofYorha_NSW_Reverse_ESRB_EN__03849.jpg);
     background-repeat: no-repeat;
 }
 
-li:hover {
+a:hover {
     flex-grow: 2;
     filter: grayscale(0);
 }

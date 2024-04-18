@@ -7,12 +7,17 @@
     <link rel="icon" href="./img/FFVII/ffvii_logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/materialize.css">
     <link rel="stylesheet" href="css/ffvii.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./JS/materialize.js"></script>
+    <script src="./JS/swiper.js"></script>
+
+
 
     <script>
         $(document).ready(function () {
@@ -40,12 +45,23 @@
                 });
         }, 
     );
+
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+
+        $(function(){ 
+            $(".JS-small img").click(function(){  
+                var num = $(this).attr("id").substr(3);  
+                $(".JS-big").attr( "src" , "./img/front/big_img00" + num + ".jpg" );
+            });
+        });
     </script>
 
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
         <a href="./index.html"><img src="./img/icons/Logo_White.svg" alt="logo"></a>
         <!-- hamburger -->
     </nav>
@@ -59,38 +75,275 @@
 
     <div class="blue_bg">
         <div class="marquee">
-            <h1>Available now © SQUARE ENIX CO., LTD. All rights reserved. Available now © SQUARE ENIX CO., LTD. All rights reserved.</h1>
+            <h1 class="marquee-content scroll">Available now © SQUARE ENIX CO., LTD. All rights reserved.</h1>
+            <h1 class="marquee-content scroll">Available now © SQUARE ENIX CO., LTD. All rights reserved.</h1>
+            <h1 class="marquee-content scroll">Available now © SQUARE ENIX CO., LTD. All rights reserved.</h1>
         </div>
     </div>
     
     <section class="abt_sty_awd">
         <ul>
             <li class="item1">
-                <!-- <div class="item">
-                    <div>
-                        <h3>About</h3>
-                        <h6>FINAL FANTASY VII REBIRTH is the highly anticipated new story in the FINAL FANTASY VII remake project, a reimagining of the iconic original game into three standalone titles by its original creators. In this game, players will enjoy various new elements as the story unfolds, culminating in the party's journey to “The Forgotten Capital” from the original FINAL FANTASY VII.</h6>
-                    </div>
-                    <h2>About</h2>
-                </div> -->
+                <div class="item">
+                        <!-- <div>
+                            <h3>About</h3>
+                            <h6>FINAL FANTASY VII REBIRTH is the highly anticipated new story in the FINAL FANTASY VII remake project, a reimagining of the iconic original game into three standalone titles by its original creators. In this game, players will enjoy various new elements as the story unfolds, culminating in the party's journey to “The Forgotten Capital” from the original FINAL FANTASY VII.</h6>
+                        </div> -->
+                </div>
             </li>
             <li class="item2">
-                <!-- <div class="item">
-                    <div>
+                <div class="item">
+                    <!-- <div>
                         <h3>Story</h3>
                         <h6>The Unknown Journey Continues... <br><br> Cloud and his comrades escape the city of Midgar in pursuit of the fallen hero, Sephiroth. As they travel across the world, they find themselves on a journey that will decide the fate of the planet.</h6>
-                    </div>
-                    <h2>Story</h2>
-                </div> -->
+                    </div> -->
+                </div>
             </li>
             <li class="item3">
-                <!-- <div  class="item">
-                    <h2>Award</h2>
-                </div> -->
-                
+                               
             </li>
         </ul>
     </section>
+
+    <section class="character">
+        <div class="character_title">
+            <img src="./img/FFVII/projector.gif" alt="projector" class="pro_left">
+            <h2>Character</h2>
+            <img src="./img/FFVII/projector.gif" alt="projector" class="pro_right">
+        </div>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#1"><img src="./img/FFVII/Character/01_cloud/Cloudx2.jpg"></a>
+            <a class="carousel-item" href="#2"><img src="./img/FFVII/Character/02_aerith/Aerithx2.jpg"></a>
+            <a class="carousel-item" href="#3"><img src="./img/FFVII/Character/03_barret/Barretx2.jpg"></a>
+            <a class="carousel-item" href="#4"><img src="./img/FFVII/Character/04_tifa/Tifax2.jpg"></a>
+            <a class="carousel-item" href="#5"><img src="./img/FFVII/Character/05_redxiii/redxiiix2.jpg"></a>
+            <a class="carousel-item" href="#6"><img src="./img/FFVII/Character/06_yuffie/yuffiex2.jpg"></a>
+            <a class="carousel-item" href="#7"><img src="./img/FFVII/Character/07_caitsith/catsithx2.jpg"></a>
+            <a class="carousel-item" href="#8"><img src="./img/FFVII/Character/08_cid/cidx2.jpg"></a>
+            <a class="carousel-item" href="#9"><img src="./img/FFVII/Character/09_vincent/vincentx2.jpg"></a>
+            <a class="carousel-item" href="#10"><img src="./img/FFVII/Character/10_zack/zackx2.jpg"></a>
+            <a class="carousel-item" href="#11"><img src="./img/FFVII/Character/11_sephiroth/sephirothx2.jpg"></a>
+            <a class="carousel-item" href="#12"><img src="./img/FFVII/Character/12_rufus/rufusx2.jpg"></a>
+            <a class="carousel-item" href="#13"><img src="./img/FFVII/Character/13_tseng/tsengx2.jpg"></a>
+            <a class="carousel-item" href="#14"><img src="./img/FFVII/Character/14_reno/renox2.jpg"></a>
+            <a class="carousel-item" href="#15"><img src="./img/FFVII/Character/15_rude/rudex2.jpg"></a>
+            <a class="carousel-item" href="#16"><img src="./img/FFVII/Character/16_elena/elenax2.jpg"></a>
+            <a class="carousel-item" href="#17"><img src="./img/FFVII/Character/17_roche/rochex2.jpg"></a>
+            <a class="carousel-item" href="#18"><img src="./img/FFVII/Character/18_hojo/hojox2.jpg"></a>
+            <a class="carousel-item" href="#19"><img src="./img/FFVII/Character/19_chadley/chadleyx2.jpg"></a>
+            <a class="carousel-item" href="#20"><img src="./img/FFVII/Character/20_broden/brodenx2.jpg"></a>
+            <a class="carousel-item" href="#21"><img src="./img/FFVII/Character/21_titov/titovx2.jpg"></a>
+            <a class="carousel-item" href="#22"><img src="./img/FFVII/Character/22_johnny/johnnyx2.jpg"></a>
+            <a class="carousel-item" href="#23"><img src="./img/FFVII/Character/23_sheiran/sheiranx2.jpg"></a>
+            <a class="carousel-item" href="#24"><img src="./img/FFVII/Character/24_dio/diox2.jpg"></a>
+            <a class="carousel-item" href="#25"><img src="./img/FFVII/Character/25_dyne/dynex2.jpg"></a>
+            <a class="carousel-item" href="#26"><img src="./img/FFVII/Character/26_cissnei/cissneix2.jpg"></a>
+            <a class="carousel-item" href="#27"><img src="./img/FFVII/Character/27_bugenhagen/bugenhagenx2.jpg"></a>
+            <a class="carousel-item" href="#28"><img src="./img/FFVII/Character/28_zangan/zanganx2.jpg"></a>
+          </div>
+    </section>
+
+    <section class="rotw">
+
+        <h2>REGIONS OF THE WORLD</h2>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" navigation="true" space-between="30" effect="fade" loop="true" autoplay-delay="7500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/01.webp" />
+                <div>
+                    <h3>Grasslands</h3>
+                    <h6>A vast, verdant expanse of land rich with mako. These plains are dotted with smaller outposts and planetary fonts waiting to be discovered. Adventure lies beyond the swamplands, but you'll need to rent a chocobo from the local ranch if you want to cross.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/02.webp" />
+                <div>
+                    <h3>Under Junon</h3>
+                    <h6>Former capital of the eponymous republic, this once-bustling port town fell into decline after its destruction at the hands of Shinra. All that remains now is a desolate fishing village where the displaced citizens have taken refuge.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/03.webp" />
+                <div>
+                    <h3>Junon</h3>
+                    <h6>Previously a beacon of hope and economic prosperity, the former capital of the republic now slumbers beneath the waves. After its takeover, Shinra repurposed the city into its second-largest outpost, a fortified stronghold replete with an underwater reactor.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/04.webp" />
+                <div>
+                    <h3>Corel Prison</h3>
+                    <h6>A sprawling slum that infests the base of the Gold Saucer. It's almost as if the Saucer's glimmering façade acts a beacon for vagabonds and ne'er-do-wells the world over, as they have flocked there in droves. So dangerous is the Dustbowl─Corel Prison's slightly kinder sobriquet--that those who enter its limits are said to never return.</h6>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/05.webp" />
+                <div>
+                    <h3>Gold Saucer</h3>
+                    <h6>Referred to as the gilded paradise, the Gold Saucer is a resplendent amusement park on an epic scale. It is divided into seven areas, called ""squares,"" each with their own unique attractions. One such is the Skywheel, which takes guests high above the Saucer for an unforgettable view of the park, and has proven to be a popular date spot.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/06.webp" />
+                <div>
+                    <h3>Kalm</h3>
+                    <h6>A halcyon hamlet kept safe from the outside world by a sturdy stone wall. Though it lacks a reactor of its own, it thrives thanks to a steady supply of mako piped in from the metropolis of Midgar, which is visible from atop the town’s famous clock tower.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/07.webp" />
+                <div>
+                    <h3>Mythril Mine</h3>
+                    <h6>A once-bustling mine that connects the grasslands with Junon. Though once prized for its rich mythril deposits, the quarry fell into disuse after Shinra developed a superior mineral of their own, and the miners that once worked its tunnels have been replaced with monsters.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/08.webp" />
+                <div>
+                    <h3>Shinra-8</h3>
+                    <h6>A Shinra cruise ship that ferries travelers between the planet’s eastern and western continents. After departing the port of Junon, it heads for the resort town of Costa del Sol. As part of the on-board entertainment, the ship plays host to a Queen’s Blood tournament.</h6>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/09.webp" />
+                <div>
+                    <h3>Starboard Junon</h3>
+                    <h6>An urban residential zone within the fortified metropolis overlooking the ocean. In addition to housing for Shinra personnel, high-end boutiques and restaurants line its streets. Currently, preparations are underway here for Rufus Shinra’s presidential inauguration parade.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/10.webp" />
+                <div>
+                    <h3>Costa del Sol</h3>
+                    <h6>A thriving resort town built on the continent's always-sunny coast. All visitors to this ocean oasis are welcomed with graceful dancers and colourful flower garlands. While Costa del Sol has many attractions, its biggest draw is its pristine sandy beaches, which are always filled with tourists eager take a refreshing dip.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/11.webp" />
+                <div>
+                    <h3>Gongaga</h3>
+                    <h6>A small village situated in the middle of a verdant jungle. It is also the site of a horrific mako reactor explosion. The Gongaga mushrooms that grow in the surrounding tangle are wonderfully fragrant and are considered a delicacy by many. Due to the explosion, the Gongaga reactor remains offline to this day.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/12.webp" />
+                <div>
+                    <h3>Cosmo Canyon</h3>
+                    <h6>An arid expanse marked by its vivid red earth and majestic ravines. Known as the "sanctuary of planetology," here you can find numerous scholars dedicated to studying the planet. However, it is also populated by ascetics who have eschewed mako consumption and tourists enticed by the region's deep spirituality. Rather than mako, the settlement itself relies on wind power. Numerous windmills dot the canyon, harnessing the gale-force winds that whistle between its walls.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/13.webp" />
+                <div>
+                    <h3>Nibelheim (5 Years Ago)</h3>
+                    <h6>A quiet, antiquated village tucked away at the foot of Mt. Nibel—the location of Shinra's first ever mako reactor. While the reactor once brought prosperity to the village, it now seems to be a hotbed of monstrous activity, and the war hero Sephiroth is called upon to lead an investigation into the matter.</h6>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="./img/FFVII/rotw/14.webp" />
+                <div>
+                    <h3>Shinra Mansion</h3>
+                    <h6>A dilapidated building on the outskirts of Nibelheim owned by the Shinra Electric Power Company. While it once housed a team of skilled researchers who carried out clandestine experiments in its subterranean chambers, it now lies vacant, and not even Nibelheim's residents are allowed inside.</h6>
+                </div>
+            </swiper-slide>
+
+        </swiper-container>
+    </section>
+
+    
+
+    <section class="abilities">
+
+        <h2>ABILITIES</h2>
+
+        <div class="abilitiesInfo">
+            <div class="ability">
+                <img src="./img/FFVII/Abilities/Fighting.webp" alt="fighting">
+                <div>
+                    <h5>FIGHTING</h5>
+                    <h6>Press [ &#9633; ] to perform a normal attack. Dealing damage will also fill the ATB gauge needed to use abilities and spells.</h6>
+                </div>
+            </div>
+
+            <div class="ability">
+                <img src="./img/FFVII/Abilities/Commands.webp" alt="commands">
+                <div>
+                    <h5>COMMANDS</h5>
+                    <h6>Open the command menu with [ x ] to enter Tactical Mode, which slows down the passage of time. Devise your strategies in the moment or register commands as shortcuts and use them as your intuition deems fit.</h6>
+                </div>
+            </div>
+
+            <div class="ability">
+                <img src="./img/FFVII/Abilities/abilities.webp" alt="abilities">
+                <div>
+                    <h5>ABILITIES</h5>
+                    <h6>Equipping weapons and setting materia will grant access to a wide range of abilities. Using these abilities requires you to expend charges from the ATB gauge, which fills as time passes or whenever you deal damage.</h6>
+                </div>
+            </div>
+
+            <div class="ability">
+                <img src="./img/FFVII/Abilities/magic.webp" alt="magic">
+                <div>
+                    <h5>MAGIC</h5>
+                    <h6>Magic materia can be set in weapons and armor to enable the use of spells such as Fire and Cure. Casting spells consumes both ATB charges as well as MP.</h6>
+                </div>
+            </div>
+
+            <div class="ability">
+                <img src="./img/FFVII/Abilities/limit-break.webp" alt="limit-break">
+                <div>
+                    <h5>LIMIT BREAK</h5>
+                    <h6>The limit gauge gradually fills as you take damage or stagger foes. Once the gauge is full, you can unleash devastating limit breaks unique to each party member. Some synergy abilities can increase your limit level, enabling the usage of even more powerful attacks.</h6>
+                </div>
+            </div>
+
+            <div class="ability">
+                <img src="./img/FFVII/Abilities/synergy.webp" alt="synergy">
+                <div>
+                    <h5>SYNERGY ABILITIES</h5>
+                    <h6>Powerful attacks in which two characters team up to turn the tide of battle. More abilities will unlock as you increase the party level - a numerical expression of how closely-knit your team is - and deepen the affinity between party members. Fill the synergy gauge by using abilities, then unleash a synchronized assault!</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="system">
+        <h2>SYSTEM</h2>
+
+        <video autoplay muted loop>
+            <source src="./img/FFVII/videoplayback_System.webm">
+        </video>
+
+        <a href="store_ffvii.html" class="buy_btn">BUY NOW</a>
+
+    </section>
+
+    <footer>
+
+        <a href="https://esrb.org" target="_blank"><img src="./img/FFVII/ESRB.webp" alt="ESRB"></a>
+        <a href="https://playstation.com" target="_blank"><img src="./img/FFVII/PS5-logo.png" alt="PS5"></a>
+        <a href="https://square-enix-games.com" target="_blank"><img src="./img/FFVII/squareenix-logo.png" alt="SqaureEnix"></a>
+
+        
+        <p>&#169; SQUARE ENIX CO., LTD. All rights reserved.</p>
+        <p>Official Notice: Exclusively for Educational purpose at WiEdu Co. - Non-Commercial Intent.</p>
+        <p>In the event of any copyright concerns, please direct all correspondence to sdchang3@gmail.com. <br> Immediate action will be taken to remove the site upon verification of any infringement claims.</p>
+        
+
+    </footer>
+    
+    
 
 
     
