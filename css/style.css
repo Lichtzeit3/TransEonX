@@ -1,11 +1,14 @@
 @import url(reset.css);
 
-    /* *{
-        outline: 1px solid red;
-    } */
+/* *{
+    outline: 1px solid red;
+} */
 
 html {
     font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
 }
 
 body {
@@ -25,6 +28,7 @@ body {
     overflow: hidden;
     position: relative;
     max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,8 +83,10 @@ p{
     align-items: center;
     max-width: 1380px;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .fa-solid {
@@ -108,6 +114,10 @@ nav>a img {
     line-height: 52px;
 }
 
+.function{
+    box-sizing: border-box;
+}
+
 /* -----------------------Sub nav-------------------------- */
 ol{
     display: none; 
@@ -119,8 +129,6 @@ ol{
     line-height: 2.5;
   }
 /* -----------------------Sub nav-------------------------- */
-
-
 li a i {
     width: 48px;
     height: 48px;
@@ -142,6 +150,9 @@ li a i {
 
 
 /* ----------------------- Header Start ------------------------- */
+header span{
+    overflow-x: hidden;
+}
 
 .loopImg {
     width: 4048px;  
@@ -173,24 +184,25 @@ li a i {
     }
 }
 
-.marquee{
+/* .marquee{
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
     gap: 1rem;
     position: relative;
     user-select: none;
+    white-space: nowrap;
 }
 
 .marquee-content{
     flex-shrink: 0;
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     min-width: 100%;
     gap: 1rem;
     font-size: 16rem;
     font-weight: bold;
     opacity: 40%;
-}
+} */
 
 @keyframes scroll{
     from{
@@ -297,27 +309,6 @@ li a i {
     grid-row: 2/3;
 }
 
-/* .marquee {
-    width: 3364px;
-    height: 202px;
-    animation-name: marquee;
-    animation-duration: 25s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    margin-top: 550px;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate(1000px, 0)
-    }
-
-    100% {
-        transform: translate(-1000px, 0)
-    }
-} */
-
 .marquee{
     display: flex;
     overflow: hidden;
@@ -364,10 +355,12 @@ li a i {
     flex-direction: column;
     color: #c1c1c1;
     align-items: center;
+    overflow: hidden;
 }
 
 .news>.newsUpper {
     display: flex;
+    overflow: hidden;
 }
 
 .newsUpper>div {
@@ -459,7 +452,8 @@ li a i {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    margin-top: 4px;
+    /* margin-top: 4px; */
+    align-self: center;
     margin-right: 10px;
     background-image: linear-gradient(#FF0000, #FFA800);
 }
@@ -497,7 +491,7 @@ li a i {
 
 .newsTabs h5 {
     font-weight: bold;
-    margin-left: 0;
+    /* margin-left: 0; */
     color: #666;
 }
 
@@ -526,11 +520,9 @@ li a i {
     width: 908px;
     height: 60px;
     overflow: hidden;
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-
-
+    -webkit-box-orient: vertical; */
 }
 
 .rowsNews .newsInfo {
@@ -554,6 +546,7 @@ li a i {
     position: relative;
     background-color: #eee;
     max-width: 1440px;
+    overflow: hidden;
 }
 
 .arc1 {
@@ -615,10 +608,6 @@ li a i {
     animation: scroll 40s linear infinite;
 }
 
-#hp_game{
-    margin-top: 192px;
-}
-
 .gameBoxs {
     margin: 20px auto 212px auto;
     max-width: 1280px;
@@ -634,17 +623,11 @@ li a i {
 }
 
 .filter {
-    width: 620px;
-    height: 750px;
     background-color: rgba(102, 102, 102, .4);
-    border-radius: 50px;
 }
 
 .filter1 {
-    width: 620px;
-    height: 750px;
     background-color: rgba(102, 102, 102, .8);
-    border-radius: 50px;
 }
 
 .filter,
@@ -654,6 +637,9 @@ li a i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .gBox1 {
@@ -690,6 +676,7 @@ li a i {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -871,9 +858,7 @@ li a i {
     border-radius: 100px;
     position: absolute;
     top: -260px;
-    /* left: 165px; */
     left: 43%;
-    /* transform: translateX(-50%); */
     background-image: linear-gradient(#FF0000, #FFA800);
     display: flex;
     align-items: center;
@@ -912,12 +897,12 @@ li a i {
 
 /* ---------------- Contact End ---------------- */
 
-
 /* ---------------- Footer Start ---------------- */
 footer {
     width: 100%;
     background-color: #eee;
     padding: 12px 0;
+    overflow: hidden;
 }
 
 footer p {

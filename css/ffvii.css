@@ -228,14 +228,14 @@ header img{
     object-fit: cover;
     width: 400px;
     transform: rotate(135deg);
-    opacity: .3;
+    opacity: .25;
 }
 
 .pro_right{
     display: block;
     object-fit: cover;
     width: 400px;
-    opacity: .3;
+    opacity: .25;
     transform: rotate(-135deg);
 }
 
