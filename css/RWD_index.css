@@ -147,6 +147,7 @@
 
 @media screen and (max-width: 1230px){
     .aboutCont>h4{
+        height: fit-content;
         -webkit-line-clamp: 9;
     }
 }
@@ -164,7 +165,7 @@
     }
 
     .gBox_btn{
-        height: 49vh;
+        height: 400px;
         width: 616px;
     }
 }
@@ -213,7 +214,6 @@
     .aboutCont>h4{
         font-size: 1.8rem;
         -webkit-line-clamp: 10;
-        height: 260px;
     }
 
     h3{
@@ -222,6 +222,10 @@
 
     .aboutCont a>h5{
         font-size: 1.8rem;
+    }
+
+    .storeItems{
+        justify-content: center;
     }
 }
 
@@ -242,7 +246,7 @@
 
     .gameBoxs{
         margin-top: 50px;
-        gap: 2vh;
+        gap: 20px;
     }
 
     .store_btn{
@@ -257,12 +261,11 @@
 @media screen and (max-width: 670px){
     .gBox_btn{
         width: 80vw;
-        height: 26vh;
+        height: 220px;
     }
 
     .gameBoxs{
         height: 100%;
-        gap: 3vh;
     }
 
     .gBox1,
@@ -298,7 +301,6 @@
     .aboutCont>h4{
         font-size: 1.6rem;
         -webkit-line-clamp: 13;
-        height: 267px;
     }
 
     .store_btn{
