@@ -296,7 +296,9 @@
     }
 
     .scroll{
-        margin-top: 250px;
+        margin-top: 300px;
+        opacity: .05;
+        font-size: 8rem;
     }
 
     .scroll2{
@@ -313,12 +315,29 @@
         -webkit-line-clamp: 13;
     }
 
+    @keyframes pulse{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2, 1.2);
+        }
+        75%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2, 1.2);
+        }
+    }
+
     .store_btn{
         left: 25vw;
+        animation: pulse 1s linear infinite;
     }
 
     .storeItems{
         width: 85vw;
+        gap: 50px;
     }
 
     .contactUs h1{
@@ -328,4 +347,10 @@
     .contactUs h4{
         margin-bottom: 80px;
     }
+
+    .itemCont .hash{
+        margin-right: 16px;
+    }
+
+    
 }
