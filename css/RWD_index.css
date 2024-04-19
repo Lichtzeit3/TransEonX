@@ -289,6 +289,16 @@
 }
 
 @media screen and (max-width: 440px){
+    .loopImg{
+        width: 2024px;
+        height: 368px;
+        grid-template-rows: repeat(2, 164px);
+    }
+
+    .scroll{
+        margin-top: 250px;
+    }
+
     .scroll2{
         font-size: 8rem;
         margin-bottom: 60px;
