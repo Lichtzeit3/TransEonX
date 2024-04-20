@@ -153,7 +153,13 @@
 }
 
 @media screen and (max-width: 1120px){
-    /* ========================= Hamburger ============================ */
+    .hamburger{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
 
     .store_btn{
         left: 40.5%;
@@ -192,6 +198,10 @@
 
     .aboutCont{
         margin: 50px auto;
+    }
+
+    .news{
+        margin: 46px 80px;
     }
 
     .newsCard{
