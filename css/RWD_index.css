@@ -161,12 +161,16 @@
 
     .gameBoxs{
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
     }
 
     .gBox_btn{
         height: 400px;
         width: 616px;
+    }
+
+    .gBox2{
+        background-image: url(../img/FFVII/Big_btn/FFBig_BTN_rwd.png);
     }
 }
 
@@ -187,7 +191,7 @@
     }
 
     .aboutCont{
-        margin-bottom: 90px;
+        margin: 50px auto;
     }
 
     .newsCard{
@@ -230,8 +234,47 @@
 }
 
 @media screen and (max-width: 820px){
+    .loopImg{
+        width: 2699px;
+        height: 491px;
+        grid-template-rows: repeat(2, 218.5px);
+    }
+
+    .scroll{
+        margin-top: 400px;
+        opacity: 20%;
+        font-size: 10.6rem;
+    }
+    
     .store_btn{
         left: 38vw;
+        animation: pulse 5s cubic-bezier(.81,2,.17,-0.84) infinite;
+    }
+
+    @keyframes pulse{
+        0%{
+            transform: scale(1);
+        }
+        25%{
+            transform: scale(1.2, 1.2);
+        }
+        50%{
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(1.2, 1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    .gameBoxs{
+        height: 80vh;
+    }
+
+    .itemCont .hash{
+        margin-right: 16px;
     }
 }
 
@@ -315,24 +358,8 @@
         -webkit-line-clamp: 13;
     }
 
-    @keyframes pulse{
-        0%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(1.2, 1.2);
-        }
-        75%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(1.2, 1.2);
-        }
-    }
-
     .store_btn{
         left: 25vw;
-        animation: pulse 1s linear infinite;
     }
 
     .storeItems{
@@ -346,11 +373,5 @@
 
     .contactUs h4{
         margin-bottom: 80px;
-    }
-
-    .itemCont .hash{
-        margin-right: 16px;
-    }
-
-    
+    }  
 }
