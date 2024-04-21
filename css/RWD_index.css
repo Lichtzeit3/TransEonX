@@ -1,8 +1,12 @@
 
 @media screen and (max-width: 1420px){
     .main-sel{
-        width: 90vw;
+        /* width: 90vw; */
         max-width: none;
+    }
+
+    nav>a img{
+        margin-left: 20px;
     }
 
     .arc1,
@@ -155,10 +159,48 @@
 @media screen and (max-width: 1120px){
     .hamburger{
         display: block;
+        margin-right: 20px;
+    }
+
+    nav>a img{
+        margin-left: 20px;
+    }
+
+    .main-sel{
+        position: relative;
+        overflow: visible;
+    }
+
+    .navbar :nth-child(1):hover ol{
+        display: block;
+        position: absolute;
+        right: -250px;
+        top: 0;
+        z-index: 3;
     }
 
     .navbar{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 2;
+        background-color: #313131;
+    }
+
+    .navbar1{
+        top: 106px;
+    }
+
+    .navbar1 li{
+        display: block;
+        text-align: center;
+    }
+
+    .navbar2{
+        flex-direction: row;
+        top: 55px;
     }
 
     .store_btn{

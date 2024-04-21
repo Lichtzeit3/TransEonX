@@ -210,7 +210,7 @@ header img{
 /* =============================== Character =================================== */
 
 .character{
-    background-image: linear-gradient(#000, #102035);
+    background-image: linear-gradient(#000, #0A1421);
     padding-top: 100px;
     max-width: 100vw;
     overflow: hidden;
@@ -246,7 +246,7 @@ header img{
 
 /* ================================= ROTW ================================== */
 .rotw{
-    background-color: #102035;
+    background-image: linear-gradient(#0A1421, #102035);
 }
 
 .rotw h2{
@@ -273,7 +273,7 @@ swiper-slide div {
     width: 32%;
     background-color: rgba(0, 0, 0, .7);
     position: absolute;
-    z-index: 1000;
+    z-index: 5;
     bottom: 0;
     left: 9%;
     padding: 30px;
