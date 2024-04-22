@@ -104,7 +104,7 @@ p{
 
 /* ---------------------------- Header ---------------------------- */
 header{
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-image: url(../img/NieR/nier-automata-art-forest-1920x1200-1.webp);
     background-size: cover;
@@ -120,22 +120,18 @@ header a{
 
 header div{
     height: 236px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 82%;
-    left: 19%;
+    text-align: center;
 }
 
 header h2,
 header h3{
     font-family: Judson, serif;
     letter-spacing: 10px;
-    
-}
-
-header div h3{
-    margin-left: 160px;
 }
 
 /* ---------------- Story Start ---------------- */
@@ -164,7 +160,7 @@ header div h3{
 .storyCont>div{
     padding-top: 100px;
     margin-left: 120px;
-    width: 777px;
+    width: 55vw;
     height: 581px;
 }
 
@@ -187,34 +183,47 @@ header div h3{
 }
 
 .featCont{
-    width: 897px;
-    height: 959px;
-    margin-top: 55px;
+    width: 60vw;
+    height: auto;
+    margin-top: 40px;
     /* outline: 1px red solid; */
-    margin-left: 40%;
+    margin-left: 40vw;
 }
 
 .featCont h4{
-    width: 870px;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .featCont img{
+    display: block;
     width: 607px;
-    margin: 104px 0 104px 100px;
+    margin: 104px auto;
 }
 
 .dlc1{
     /* outline: 1px red solid; */
+    width: 90%;
     display: flex;
+    justify-content: space-around;
 }
 
 .dlc1 ul{
     width: 302px;
-    margin-left: 10%;
+    text-wrap: nowrap;
+}
+
+.dlc1 ul:first-child{
+    margin-left: 15%;
 }
 
 .dlc1 ul li{
     position: relative;
+    margin-left: 10%;
+}
+
+.dlc1 .dlcInfo{
+    text-wrap: wrap;
 }
 
 .dlc1 ul li::before{
@@ -231,9 +240,7 @@ header div h3{
 
 /* ---------------- Features2 Start ---------------- */
 .feature2{
-    /* height: 2100px; */
     position: relative;
-    /* z-index: -1; */
 }
 
 .divider{
@@ -254,15 +261,14 @@ header div h3{
 
 .featCont1{
     background-color: #000;
-    height: 1200px;
     width: 100%;
-    padding-left: 17%;
 }
 
 .featCont1>div{
     padding-top: 100px;
     width: 1000px;
-    height: 844px;
+    display: block;
+    margin: 0 auto;
 }
 
 .dlc_xbox{
@@ -278,6 +284,7 @@ header div h3{
 }
 
 .dlc2{
+    display: flex;
     margin-top: 54px;
     /* outline: 1px solid red; */
 }
@@ -286,11 +293,28 @@ header div h3{
     margin-bottom: 50px;
     width: 455px;
     margin-left: 40px;
-
 }
 
 .dlc2 ul:nth-child(2){
     margin-left: 200px;
+}
+
+.dlc2 ul li{
+    position: relative;
+}
+
+.dlc2 ul li::before{
+    position: absolute;
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 9px;
+}
+
+.dlc2 li h6{
+    text-indent: 20px;
 }
 
 .dlc2 ul h5{
@@ -389,12 +413,10 @@ header div h3{
 
 /* ---------------- Game Start ---------------- */
 .gamever{
+    width: 1250px;
     height: 790px;
     display: flex;
-    margin: 0 auto;
-    margin: 5% 0 5% 7.5%;
-    width: 1250px;
-    height: 710px;
+    margin: 5% auto;
 }
 
 .gamever a{
@@ -429,7 +451,7 @@ header div h3{
 }
 
 a:hover {
-    flex-grow: 2;
+    flex-grow: 2.5;
     filter: grayscale(0);
 }
 
