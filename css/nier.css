@@ -71,7 +71,7 @@ p{
 /* --------------------------- NAV ---------------------------- */
 .nav{
     position: fixed;
-    top: 300px;
+    top: 100px;
     right: 25px;
     text-align: right;
     font-size: 16px;
@@ -161,7 +161,6 @@ header h3{
     padding-top: 100px;
     margin-left: 120px;
     width: 55vw;
-    height: 581px;
 }
 
 .storyCont h4{
@@ -233,7 +232,7 @@ header h3{
     height: 8px;
     border-radius: 50%;
     background-color: #fff;
-    top: 12px;
+    top: 9px;
     left: -20px;
 }
 /* ---------------- Features1 End ---------------- */
@@ -339,7 +338,7 @@ header h3{
 }
 
 .gap{
-    height: 50px;
+    height: 100px;
     width: 100%;
     background-color: #000;
 }
