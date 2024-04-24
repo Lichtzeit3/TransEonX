@@ -1026,13 +1026,14 @@ div .itemLink1:hover {
 }
 
 /* ------------------------------ Active --------------------------------- */
-.main-sel .hamburger:active span{
+.main-sel .hamburger.active span{
     transform: rotate(215deg);
 }
-.main-sel .hamburger:active span:before{
+.main-sel .hamburger.active span:before{
     transform: scale(0);
 }
-.main-sel .hamburger:active span:after{
+
+.main-sel .hamburger.active span:after{
     transform: rotate(290deg);
     top: 0;
 }

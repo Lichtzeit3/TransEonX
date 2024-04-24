@@ -153,4 +153,13 @@
     .featCont1>div{
         width: 95vh;
     }
+
+    .featCont1 div h4{
+        font-size: 2vw;
+    }
+
+    .featCont1 div img{
+        width: 30vw;
+        height: auto;
+    }
 }
