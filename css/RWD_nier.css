@@ -158,8 +158,14 @@
         font-size: 2vw;
     }
 
+    .dlc_xbox{
+        width: 80vw;
+        justify-content: space-around;
+        margin: 50px auto;
+    }
+
     .featCont1 div img{
-        width: 30vw;
-        height: auto;
+        display: block;
+        
     }
 }
