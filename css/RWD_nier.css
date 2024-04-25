@@ -246,7 +246,8 @@
     }
 
     .storyCont h4{
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: bold;
     }
 
     .storyCont h5{
