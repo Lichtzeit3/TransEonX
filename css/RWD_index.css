@@ -142,11 +142,6 @@
         align-self: center;
         margin-top: 0;
     }
-
-    .store_btn{
-        left: 42%;
-    }
-    
 }
 
 @media screen and (max-width: 1230px){
@@ -201,10 +196,6 @@
     .navbar2{
         flex-direction: row;
         top: 55px;
-    }
-
-    .store_btn{
-        left: 40.5%;
     }
 
     .gameBoxs{
@@ -299,7 +290,6 @@
     }
     
     .store_btn{
-        left: 38vw;
         animation: pulse 5s cubic-bezier(.81,2,.17,-0.84) infinite;
     }
 
@@ -344,10 +334,6 @@
         gap: 20px;
     }
 
-    .store_btn{
-        left: 36vw;
-    }
-
     .aboutCont>h4{
         -webkit-line-clamp: 11;
     }
@@ -390,6 +376,10 @@
         grid-template-rows: repeat(2, 164px);
     }
 
+    .navbar :nth-child(1):hover ol{
+        display: none;
+    }
+
     .scroll{
         margin-top: 300px;
         opacity: .05;
@@ -401,17 +391,26 @@
         margin-bottom: 60px;
     }
 
+    .bg1{
+        height: 100vh;
+    }
+
+    .gameBoxs{
+        justify-content: space-around;
+    }
+
+    .gBox_btn{
+        height: 80vw;
+    }
+
     .aboutCont{
         width: 85vw;
+        height: 65vh;
     }
 
     .aboutCont>h4{
         font-size: 1.6rem;
         -webkit-line-clamp: 13;
-    }
-
-    .store_btn{
-        left: 25vw;
     }
 
     .storeItems{

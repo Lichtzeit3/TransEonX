@@ -104,12 +104,8 @@
         margin-top: 5vh;
     }
 
-    .abt_sty_awd li{
-        flex-grow: 2;
-    }
-
     .character{
-        height: 45vh;
+        height: 50vh;
     }
 
     .character_title img{
@@ -122,6 +118,7 @@
 
     .carousel{
         height: 40vh;
+        top: -110px;
     }
 
     .carousel .carousel-item{
@@ -130,6 +127,7 @@
 
     .rotw h2{
         font-size: 3vh;
+        margin: 5vh 0 3vh;
     }
 
     swiper-container{
