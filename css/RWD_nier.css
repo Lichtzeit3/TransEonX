@@ -79,7 +79,7 @@
     }
 
     header a img{
-        width: 5vw;
+        width: 12vw;
     }
 
     .nav{
@@ -207,12 +207,13 @@
 @media screen and (max-width: 430px){
     
     .nav{
-        top: 20px;
+        /* display: none; */
+        top: 100px;
         right: 10px;
     }
 
     .nav li{
-        margin: 5px;
+        margin: 12px;
     }
 
     .nav li a{
@@ -385,5 +386,9 @@
     .marquee-content{
         padding-top: 10vh;
         font-size: 60px;
+    }
+
+    footer img{
+        width: 90vw;
     }
 }

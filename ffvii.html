@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/materialize.css">
     <link rel="stylesheet" href="css/ffvii.css">
+    <link rel="stylesheet" href="css/RWD_ffvii.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./JS/materialize.js"></script>
     <script src="./JS/swiper.js"></script>
@@ -147,20 +148,12 @@
     <section class="rotw">
 
         <h2>REGIONS OF THE WORLD</h2>
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" navigation="true" space-between="30" effect="fade" loop="true" autoplay-delay="7500" autoplay-disable-on-interaction="false">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" navigation="true" space-between="30" effect="fade" loop="true" autoplay-delay="7500" autoplay-disable-on-interaction="false" stopOnLastSlide="false">
             <swiper-slide>
                 <img src="./img/FFVII/rotw/01.webp" />
                 <div>
                     <h3>Grasslands</h3>
                     <h6>A vast, verdant expanse of land rich with mako. These plains are dotted with smaller outposts and planetary fonts waiting to be discovered. Adventure lies beyond the swamplands, but you'll need to rent a chocobo from the local ranch if you want to cross.</h6>
-                </div>
-            </swiper-slide>
-
-            <swiper-slide>
-                <img src="./img/FFVII/rotw/02.webp" />
-                <div>
-                    <h3>Under Junon</h3>
-                    <h6>Former capital of the eponymous republic, this once-bustling port town fell into decline after its destruction at the hands of Shinra. All that remains now is a desolate fishing village where the displaced citizens have taken refuge.</h6>
                 </div>
             </swiper-slide>
 
@@ -231,22 +224,6 @@
                 <div>
                     <h3>Gongaga</h3>
                     <h6>A small village situated in the middle of a verdant jungle. It is also the site of a horrific mako reactor explosion. The Gongaga mushrooms that grow in the surrounding tangle are wonderfully fragrant and are considered a delicacy by many. Due to the explosion, the Gongaga reactor remains offline to this day.</h6>
-                </div>
-            </swiper-slide>
-
-            <swiper-slide>
-                <img src="./img/FFVII/rotw/12.webp" />
-                <div>
-                    <h3>Cosmo Canyon</h3>
-                    <h6>An arid expanse marked by its vivid red earth and majestic ravines. Known as the "sanctuary of planetology," here you can find numerous scholars dedicated to studying the planet. However, it is also populated by ascetics who have eschewed mako consumption and tourists enticed by the region's deep spirituality. Rather than mako, the settlement itself relies on wind power. Numerous windmills dot the canyon, harnessing the gale-force winds that whistle between its walls.</h6>
-                </div>
-            </swiper-slide>
-
-            <swiper-slide>
-                <img src="./img/FFVII/rotw/13.webp" />
-                <div>
-                    <h3>Nibelheim (5 Years Ago)</h3>
-                    <h6>A quiet, antiquated village tucked away at the foot of Mt. Nibel—the location of Shinra's first ever mako reactor. While the reactor once brought prosperity to the village, it now seems to be a hotbed of monstrous activity, and the war hero Sephiroth is called upon to lead an investigation into the matter.</h6>
                 </div>
             </swiper-slide>
 
@@ -331,9 +308,12 @@
 
     <footer>
 
-        <a href="https://esrb.org" target="_blank"><img src="./img/FFVII/ESRB.webp" alt="ESRB"></a>
-        <a href="https://playstation.com" target="_blank"><img src="./img/FFVII/PS5-logo.png" alt="PS5"></a>
-        <a href="https://square-enix-games.com" target="_blank"><img src="./img/FFVII/squareenix-logo.png" alt="SqaureEnix"></a>
+        <div>
+            <a href="https://esrb.org" target="_blank"><img src="./img/FFVII/ESRB.webp" alt="ESRB"></a>
+            <a href="https://playstation.com" target="_blank"><img src="./img/FFVII/PS5-logo.png" alt="PS5"></a>
+            <a href="https://square-enix-games.com" target="_blank"><img src="./img/FFVII/squareenix-logo.png" alt="SqaureEnix"></a>
+        </div>
+        
 
         
         <p>&#169; SQUARE ENIX CO., LTD. All rights reserved.</p>

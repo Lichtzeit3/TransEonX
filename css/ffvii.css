@@ -143,7 +143,7 @@ header img{
 .abt_sty_awd ul{
     display: flex;
     margin: 0 auto;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-top: 3%;
     width: 1326px;
     height: 675px;
@@ -254,7 +254,7 @@ header img{
     margin: 0 0 60px;
 }
 swiper-container {
-    width: 90%;
+    width: 80vw;
     height: 50.625%;
 }
 
