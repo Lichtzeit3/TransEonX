@@ -69,18 +69,83 @@ p{
 }
 
 /* --------------------------- NAV ---------------------------- */
-.nav{
+.hamburger{
+    /* display: none; */
+    width: 25px;
+    height: 30px;
     position: fixed;
-    top: 100px;
-    right: 25px;
+    cursor: pointer;
+    top: 50px;
+    right: 30px;
+    z-index: 10;
+}
+
+.hamburger span::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 8px;
+    box-shadow: 2px 2px 2px#000;
+}
+
+.hamburger span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 2px 2px 2px#000;
+    transition: .4s;
+}
+
+.hamburger span::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 8px;
+    box-shadow: 2px 2px 2px#000;
+}
+
+.hamburger.active span{
+    transform: rotate(215deg);
+    box-shadow: none;
+}
+
+.hamburger.active span:before{
+    transform: scale(0);
+}
+
+.hamburger.active span:after{
+    transform: rotate(290deg);
+    top: 0;
+    box-shadow: none;
+}
+
+.nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
     text-align: right;
     font-size: 16px;
     z-index: 5;
+    background-color: rgba(0, 0, 0, .95);
+    height: 100vh;
+    width: 15vw;
+    padding-top: 100px;
+    padding-right: 25px;
 }
 
 .nav li{
-    margin: 10px;
-
+    margin: 3vh 10px;
 }
 
 .nav li a{
@@ -88,6 +153,8 @@ p{
     color: white;
     text-shadow: 3px 3px 3px #000;
     position: relative;
+    font-size: 2vw;
+    width: 10vw;
 }
 
 .nav li a::after{
@@ -98,7 +165,7 @@ p{
     border-radius: 50%;
     background-color: #fff;
     top: 35%;
-    margin-left: 20px;
+    margin-left: 1vw;
 }
 
 

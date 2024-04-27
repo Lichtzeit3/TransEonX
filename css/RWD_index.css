@@ -283,6 +283,13 @@
         grid-template-rows: repeat(2, 218.5px);
     }
 
+    .loopImg1{
+        left: 2744px;
+        width: 2699px;
+        height: 491px;
+        grid-template-rows: repeat(2, 218.5px);
+    }
+
     .scroll{
         margin-top: 400px;
         opacity: 20%;
@@ -371,6 +378,13 @@
 
 @media screen and (max-width: 440px){
     .loopImg{
+        width: 2024px;
+        height: 368px;
+        grid-template-rows: repeat(2, 164px);
+    }
+
+    .loopImg1{
+        left: 2069px;
         width: 2024px;
         height: 368px;
         grid-template-rows: repeat(2, 164px);
