@@ -61,36 +61,44 @@
         flex-direction: row;
         top: 55px;
     }
+
+    .support{
+        max-width: 80vw;
+    }
+
+    .supportStage{
+        margin-right: 5vw;
+        width: 10vw;
+    }
+
+    .inquiryInstruct{
+        width: 65vw;
+    }
+
+    .supportInfo{
+        width: 65vw;
+    }
+
+    .supportInfo>li{
+        width: 65vw;
+    }
+
+    .support div:nth-child(2){
+        width: 65vw;
+    }
+
+    .supportInfo li:nth-child(8){
+        height: auto;
+    }
+
+    .supportInfo .checks{
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 820px){
-    .storeTabs{
-        width: 80vw;
-    }
-
-    .sTabs{
-        margin-left: 3vw;
-    }
-
-    .hashTags1{
-        max-width: 80vw;
-        flex-wrap: wrap;
-    }
-
-    .hashTags1 a{
-        flex-grow: unset;
-    }
-
-    .storeItems1{
-        width: 90vw;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .pages span{
-        width: 2vw;
-        height: 2vw;
+    .supportInfo>li>.attach{
+        margin-right: 0;
     }
 }
 
@@ -108,18 +116,40 @@
         font-size: 6vh;
     }
 
-    .storeTabs{
-        flex-wrap: wrap;
+    .supportStage{
+        display: none;
     }
 
-    .storeItems1{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        margin: 5vh auto;
+    .support div:nth-child(2){
+        width: 80vw;
     }
 
-    .pages span{
-        width: 4vw;
-        height: 4vw;
+    .inquiryInstruct{
+        width: 80vw;
+        margin-bottom: 0;
+    }
+
+    .supportInfo>li>label{
+        width: 22vw;
+        padding-top: 61px;
+    }
+
+    .supportInfo>li{
+        width: 80vw;
+        height: 150px;
+        justify-content: space-between;
+    }
+
+    .supportInput{
+        width: 65%;
+    }
+
+    .supportInfo>li>.attach{
+        padding-top: 35px;
+    }
+
+    .fileInput{
+        width: 65%;
+        padding-top: 51px;
     }
 }
