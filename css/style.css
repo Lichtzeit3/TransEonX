@@ -1857,6 +1857,7 @@ textarea::placeholder{
 
 .wishPic1 {
     max-width: 200px;
+    max-height: 200px;
     border-radius: 30px;
     margin-right: 5.5%;
     filter: grayscale(1) blur(1px) opacity(.4);
