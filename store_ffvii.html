@@ -80,7 +80,7 @@
 
                     <div>
                         <button class="logIn_btn mAddCart">ADD TO CART</button>
-                        <button class="logIn_btn mAddWish"><i class="fa-solid fa-heart"></i>ADDED TO WISHLIST</button>
+                        <button class="logIn_btn mAddedWish"><i class="fa-solid fa-heart"></i>ADDED TO WISHLIST</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 </h5>
             </div>
 
-            <button class="logIn_btn back_btn">Back</button>
+            <button class="logIn_btn back_btn" id="backButton">Back</button>
 
         </main>
 
@@ -107,6 +107,13 @@
             <p>In the event of any copyright concerns, please direct all correspondence to sdchang3@gmail.com. <br>
                 Immediate action will be taken to remove the site upon verification of any infringement claims.</p>
         </footer>
+
+        <script>
+            const backButton = document.getElementById("backButton");
+            backButton.addEventListener("click", () => {
+                window.history.back();
+            });
+        </script>
     
 </body>
 </html>
