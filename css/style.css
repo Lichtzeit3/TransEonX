@@ -161,7 +161,6 @@ nav>a img {
 
 }
 
-
 .navbar1 li:first-child{
     /* outline: 1px green solid; */
     position: relative;
@@ -1423,6 +1422,7 @@ label {
 
 .wishPic {
     max-width: 200px;
+    max-height: 200px;
     border-radius: 30px;
     margin-right: 5.5%;
 }
