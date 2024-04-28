@@ -1,0 +1,113 @@
+
+@media screen and (max-width: 1920px){
+    .main{
+        max-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    .main-sel{
+        max-width: none;
+    }
+
+    nav>a img{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .hamburger{
+        display: block;
+        margin-right: 20px;
+    }
+
+    nav>a img{
+        margin-left: 20px;
+    }
+
+    .main-sel{
+        position: relative;
+        overflow: visible;
+    }
+
+    .navbar :nth-child(1):hover ol{
+        display: block;
+        position: absolute;
+        right: -250px;
+        top: 0;
+        z-index: 3;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 2;
+        background-color: #313131;
+    }
+
+    .navbar1{
+        top: 106px;
+    }
+
+    .navbar1 li{
+        display: block;
+        text-align: center;
+    }
+
+    .navbar2{
+        flex-direction: row;
+        top: 55px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .navbar :nth-child(1):hover ol{
+        display: none;
+    }
+
+    .header1{
+        width: 100vw;
+    }
+
+    .header1 h1{
+        margin: 4vh 0 3vh 10vw;
+        font-size: 6vh;
+    }
+
+    .media{
+        width: 80vw;
+    }
+
+    hr{
+        width: 35vw;
+    }
+
+    .loginInfo{
+        width: 80vw;
+    }
+
+    .loginInfo h4{
+        padding-left: 0;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    input{
+        width: calc(80vw - 20px);
+    }
+
+    .forgotPw{
+        margin-left: 45vw;
+    }
+
+    .logIn_btn{
+        width: 80vw;
+    }
+
+    .loginInfo .join{
+        padding: 10px;
+    }
+}
