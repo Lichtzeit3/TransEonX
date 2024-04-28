@@ -96,7 +96,8 @@
     }
 
     .mAddCart,
-    .mAddWish{
+    .mAddWish,
+    .mAddedWish{
         width: 40vw;
         margin: 0 auto;
     }
@@ -170,7 +171,8 @@
     }
 
     .mAddCart,
-    .mAddWish{
+    .mAddWish,
+    .mAddedWish{
         width: 90vw;
     }
 

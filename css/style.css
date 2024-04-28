@@ -1778,13 +1778,15 @@ textarea::placeholder{
 }
 
 .mAddCart,
-.mAddWish{
+.mAddWish,
+.mAddedWish{
     width: 300px;
     height: 45px;
     border-radius: 10px;
 }
 
-.mAddWish{
+.mAddWish,
+.mAddedWish{
     background-color: transparent;
     color: #000;
     margin-left: 16px;
@@ -1792,6 +1794,11 @@ textarea::placeholder{
 }
 
 .mAddWish i{
+    color: white;
+    text-shadow: grey 1px 0 6px;
+}
+
+.mAddedWish i{
     color: #FF0000;
 }
 
