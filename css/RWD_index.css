@@ -427,6 +427,7 @@
     .aboutCont>h4{
         font-size: 1.6rem;
         -webkit-line-clamp: 13;
+        line-height: 1.5;
     }
 
     .storeItems{
