@@ -391,7 +391,7 @@
     }
 
     .navbar :nth-child(1):hover ol{
-        /* display: none; */
+        display: none;
         right: unset;
         top: 0;
     }
